@@ -1,6 +1,4 @@
-package com.example.btnhom.repository;
-
-import com.example.btnhom.model.Room;
+package com.example.btnhom.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,9 +7,9 @@ public class RoomRepository {
     private static List<Room> roomList = new ArrayList<>();
 
     static {
-        // Sample data with new attributes
-        roomList.add(new Room("R001", "Phòng 101", 1500000, false, "", "", 20.5, "Gần cầu thang"));
-        roomList.add(new Room("R002", "Phòng 102", 1800000, true, "Nguyễn Văn A", "0987654321", 25.0, "Có ban công"));
+        // Sample data
+        roomList.add(new Room("R001", "Phòng 101", 1500000, false, "", ""));
+        roomList.add(new Room("R002", "Phòng 102", 1800000, true, "Nguyễn Văn A", "0987654321"));
     }
 
     public static List<Room> getRoomList() {
