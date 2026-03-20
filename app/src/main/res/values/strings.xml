@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">BTNhom</string>
+    <string name="app_name">Room Manager</string>
+    <string name="title_room_list">Danh sách phòng</string>
+    <string name="text_price_format">Giá: %1$s VNĐ</string>
+    <string name="text_status_vacant">Trống</string>
+    <string name="text_status_occupied">Đang thuê</string>
+
+    <string name="title_main_menu">Hệ Thống Quản Lý Phòng</string>
+    <string name="btn_text_back">Quay lại</string>
+    <string name="btn_text_create">Thêm phòng mới (Create)</string>
+    <string name="btn_text_view">Xem danh sách (View)</string>
+    <string name="btn_text_update">Cập nhật phòng (Update)</string>
+    <string name="btn_text_delete">Xóa phòng (Delete)</string>
 </resources>
