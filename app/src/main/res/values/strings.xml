@@ -55,4 +55,11 @@
     <string name="error_invalid_price">Giá thuê không hợp lệ</string>
     <string name="error_invalid_area">Diện tích không hợp lệ</string>
     <string name="update_success">Cập nhật thành công</string>
+
+    <!-- Strings for Delete functionality -->
+    <string name="dialog_delete_confirm_title">Xác nhận xóa</string>
+    <string name="dialog_delete_confirm_message">Bạn có chắc chắn muốn xóa phòng %1$s không?</string>
+    <string name="btn_delete_confirm">Xóa</string>
+    <string name="btn_delete_cancel">Hủy</string>
+    <string name="toast_delete_success">Đã xóa phòng thành công</string>
 </resources>

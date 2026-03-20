@@ -43,4 +43,13 @@ public class RoomRepository {
         }
         return null;
     }
+
+    public static boolean isRoomCodeExists(String roomCode) {
+        for (Room room : roomList) {
+            if (room.getRoomId().equalsIgnoreCase(roomCode)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

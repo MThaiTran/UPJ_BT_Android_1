@@ -23,6 +23,11 @@ public class Room implements Serializable {
         this.notes = notes;
     }
 
+    // Secondary constructor for backward compatibility or simpler room creation
+    public Room(String roomId, String roomName, double rentPrice, boolean isRented, String tenantName, String phoneNumber) {
+        this(roomId, roomName, rentPrice, isRented, tenantName, phoneNumber, 0.0, "");
+    }
+
     // Getters and Setters
     public String getRoomId() { return roomId; }
     public void setRoomId(String roomId) { this.roomId = roomId; }

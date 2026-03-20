@@ -13,12 +13,29 @@ import java.util.List;
 
 public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder> {
 
-    private final List<Room> roomList;
+    private List<Room> roomList;
     private final Context context;
+    private OnItemLongClickListener onItemLongClickListener;
+
+    public interface OnItemLongClickListener {
+        void onItemLongClick(Room room, int position);
+    }
+
+    public void setOnItemLongClickListener(OnItemLongClickListener listener) {
+        this.onItemLongClickListener = listener;
+    }
 
     public RoomAdapter(Context context, List<Room> roomList) {
         this.context = context;
         this.roomList = roomList;
+    }
+
+    /**
+     * Hỗ trợ Member A cập nhật danh sách sau khi tìm kiếm hoặc sắp xếp.
+     */
+    public void setRoomList(List<Room> roomList) {
+        this.roomList = roomList;
+        notifyDataSetChanged();
     }
 
     @NonNull
@@ -32,18 +49,26 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder
     public void onBindViewHolder(@NonNull RoomViewHolder holder, int position) {
         Room room = roomList.get(position);
 
-        holder.tvItemRoomName.setText(room.getName());
+        holder.tvItemRoomName.setText(room.getRoomName());
 
-        String priceText = context.getString(R.string.text_price_format, String.valueOf(room.getPrice()));
+        String priceText = context.getString(R.string.text_price_format, String.valueOf(room.getRentPrice()));
         holder.tvItemRoomPrice.setText(priceText);
 
-        if (room.isVacant()) {
+        if (!room.isRented()) {
             holder.tvItemRoomStatus.setText(context.getString(R.string.text_status_vacant));
             holder.tvItemRoomStatus.setTextColor(context.getColor(android.R.color.holo_green_dark));
         } else {
             holder.tvItemRoomStatus.setText(context.getString(R.string.text_status_occupied));
             holder.tvItemRoomStatus.setTextColor(context.getColor(android.R.color.holo_red_dark));
         }
+
+        holder.itemView.setOnLongClickListener(v -> {
+            if (onItemLongClickListener != null) {
+                onItemLongClickListener.onItemLongClick(room, position);
+                return true;
+            }
+            return false;
+        });
     }
 
     @Override
@@ -58,7 +83,6 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder
 
         public RoomViewHolder(@NonNull View itemView) {
             super(itemView);
-            // Tuân thủ đúng quy tắc ID View bạn đã đề ra
             tvItemRoomName = itemView.findViewById(R.id.tv_item_room_name);
             tvItemRoomPrice = itemView.findViewById(R.id.tv_item_room_price);
             tvItemRoomStatus = itemView.findViewById(R.id.tv_item_room_status);
