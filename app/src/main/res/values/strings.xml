@@ -1,5 +1,43 @@
 <resources>
-    <string name="app_name">Quản lý nhà trọ</string>
+    <string name="app_name">Room Manager</string>
+    <string name="title_room_list">Danh sách phòng</string>
+    <string name="text_price_format">Giá: %1$s VNĐ</string>
+    <string name="text_status_vacant">Trống</string>
+    <string name="text_status_occupied">Đang thuê</string>
+
+    <string name="title_main_menu">Hệ Thống Quản Lý Phòng</string>
+    <string name="btn_text_back">Quay lại</string>
+    <string name="btn_text_create">Thêm phòng mới (Create)</string>
+    <string name="btn_text_view">Xem danh sách (View)</string>
+    <string name="btn_text_update">Cập nhật phòng (Update)</string>
+    <string name="btn_text_delete">Xóa phòng (Delete)</string>
+
+    <string name="title_room_management">Quan ly nha tro</string>
+    <string name="title_add_room">Them phong tro</string>
+
+    <string name="action_add_room">Them phong</string>
+    <string name="action_save_room">Luu phong</string>
+
+    <string name="label_room_rented">Da cho thue</string>
+    <string name="label_total_rooms">Tong so phong: %1$d</string>
+    <string name="label_total_rooms_placeholder">Tong so phong: 0</string>
+
+    <string name="hint_room_code">Ma phong (VD: P101)</string>
+    <string name="hint_room_name">Ten phong</string>
+    <string name="hint_room_price">Gia thue</string>
+    <string name="hint_tenant_name">Ten nguoi thue</string>
+    <string name="hint_tenant_phone">So dien thoai nguoi thue</string>
+
+    <string name="error_room_code_required">Vui long nhap ma phong</string>
+    <string name="error_room_code_exists">Ma phong da ton tai</string>
+    <string name="error_room_name_required">Vui long nhap ten phong</string>
+    <string name="error_room_price_required">Vui long nhap gia thue</string>
+    <string name="error_room_price_invalid">Gia thue phai la so duong</string>
+    <string name="error_tenant_name_required">Vui long nhap ten nguoi thue</string>
+    <string name="error_tenant_phone_required">Vui long nhap so dien thoai nguoi thue</string>
+
+    <string name="message_add_room_success">Them phong thanh cong</string>
+
     <string name="title_update_room">Cập nhật phòng trọ</string>
     <string name="label_room_id">Mã phòng</string>
     <string name="label_room_name">Tên phòng</string>

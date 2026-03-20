@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_add_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_add_room"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_add_room_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/hint_room_code"
+            android:inputType="textCapCharacters" />
+
+        <EditText
+            android:id="@+id/et_add_room_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/hint_room_name"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/et_add_room_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/hint_room_price"
+            android:inputType="numberDecimal" />
+
+        <CheckBox
+            android:id="@+id/cb_add_room_rented"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/label_room_rented" />
+
+        <EditText
+            android:id="@+id/et_add_tenant_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:enabled="false"
+            android:hint="@string/hint_tenant_name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_add_tenant_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:enabled="false"
+            android:hint="@string/hint_tenant_phone"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/btn_add_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/action_save_room" />
+
+    </LinearLayout>
+</ScrollView>
+
+
