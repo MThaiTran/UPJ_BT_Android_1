@@ -1,14 +1,20 @@
 <resources>
-    <string name="app_name">Room Manager</string>
-    <string name="title_room_list">Danh sách phòng</string>
-    <string name="text_price_format">Giá: %1$s VNĐ</string>
-    <string name="text_status_vacant">Trống</string>
-    <string name="text_status_occupied">Đang thuê</string>
-
-    <string name="title_main_menu">Hệ Thống Quản Lý Phòng</string>
-    <string name="btn_text_back">Quay lại</string>
-    <string name="btn_text_create">Thêm phòng mới (Create)</string>
-    <string name="btn_text_view">Xem danh sách (View)</string>
-    <string name="btn_text_update">Cập nhật phòng (Update)</string>
-    <string name="btn_text_delete">Xóa phòng (Delete)</string>
+    <string name="app_name">Quản lý nhà trọ</string>
+    <string name="title_update_room">Cập nhật phòng trọ</string>
+    <string name="label_room_id">Mã phòng</string>
+    <string name="label_room_name">Tên phòng</string>
+    <string name="label_rent_price">Giá thuê</string>
+    <string name="label_area">Diện tích (m²)</string>
+    <string name="label_status">Đã cho thuê</string>
+    <string name="label_tenant_name">Tên người thuê</string>
+    <string name="label_phone_number">Số điện thoại</string>
+    <string name="label_notes">Ghi chú</string>
+    <string name="status_vacant">Còn trống</string>
+    <string name="status_rented">Đã thuê</string>
+    <string name="btn_save">Lưu</string>
+    <string name="btn_cancel">Hủy</string>
+    <string name="error_empty_name">Tên phòng không được để trống</string>
+    <string name="error_invalid_price">Giá thuê không hợp lệ</string>
+    <string name="error_invalid_area">Diện tích không hợp lệ</string>
+    <string name="update_success">Cập nhật thành công</string>
 </resources>
