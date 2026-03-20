@@ -3,30 +3,28 @@ package com.example.btnhom.repository;
 import com.example.btnhom.model.Room;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
-public final class RoomRepository {
-    private static final List<Room> ROOM_LIST = new ArrayList<>();
+public class RoomRepository {
+    private static RoomRepository instance;
+    private final List<Room> roomList;
 
     private RoomRepository() {
+        roomList = new ArrayList<>();
+        // Khởi tạo dữ liệu mẫu (Mock data)
+        roomList.add(new Room("R01", "Phòng 101", 1500000, true));
+        roomList.add(new Room("R02", "Phòng 102", 2000000, false));
+        roomList.add(new Room("R03", "Phòng 201", 1800000, true));
     }
 
-    public static List<Room> getRoomList() {
-        return Collections.unmodifiableList(ROOM_LIST);
-    }
-
-    public static void addRoom(Room room) {
-        ROOM_LIST.add(room);
-    }
-
-    public static boolean isRoomCodeExists(String roomCode) {
-        for (Room room : ROOM_LIST) {
-            if (room.getRoomCode().equalsIgnoreCase(roomCode)) {
-                return true;
-            }
+    public static synchronized RoomRepository getInstance() {
+        if (instance == null) {
+            instance = new RoomRepository();
         }
-        return false;
+        return instance;
+    }
+
+    public List<Room> getRoomList() {
+        return roomList;
     }
 }
-
