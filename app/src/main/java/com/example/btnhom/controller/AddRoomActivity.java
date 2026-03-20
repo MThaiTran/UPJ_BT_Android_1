@@ -26,7 +26,7 @@ public class AddRoomActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_add);
+        setContentView(R.layout.activity_create_room);
 
         initViews();
         setupRentedToggle();
