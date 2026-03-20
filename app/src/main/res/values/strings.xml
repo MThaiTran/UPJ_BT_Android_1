@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">BTNhom</string>
+    <string name="app_name">Room Manager</string>
+    <string name="title_room_list">Danh sách phòng</string>
+    <string name="text_price_format">Giá: %1$s VNĐ</string>
+    <string name="text_status_vacant">Trống</string>
+    <string name="text_status_occupied">Đang thuê</string>
 </resources>
