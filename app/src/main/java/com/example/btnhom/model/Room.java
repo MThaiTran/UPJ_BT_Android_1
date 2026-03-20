@@ -9,14 +9,18 @@ public class Room implements Serializable {
     private boolean isRented;
     private String tenantName;
     private String phoneNumber;
+    private double area; // Diện tích
+    private String notes; // Ghi chú
 
-    public Room(String roomId, String roomName, double rentPrice, boolean isRented, String tenantName, String phoneNumber) {
+    public Room(String roomId, String roomName, double rentPrice, boolean isRented, String tenantName, String phoneNumber, double area, String notes) {
         this.roomId = roomId;
         this.roomName = roomName;
         this.rentPrice = rentPrice;
         this.isRented = isRented;
         this.tenantName = tenantName;
         this.phoneNumber = phoneNumber;
+        this.area = area;
+        this.notes = notes;
     }
 
     // Getters and Setters
@@ -37,4 +41,10 @@ public class Room implements Serializable {
 
     public String getPhoneNumber() { return phoneNumber; }
     public void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
+
+    public double getArea() { return area; }
+    public void setArea(double area) { this.area = area; }
+
+    public String getNotes() { return notes; }
+    public void setNotes(String notes) { this.notes = notes; }
 }

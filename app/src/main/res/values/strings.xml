@@ -1,16 +1,20 @@
 <resources>
     <string name="app_name">Quản lý nhà trọ</string>
     <string name="title_update_room">Cập nhật phòng trọ</string>
+    <string name="label_room_id">Mã phòng</string>
     <string name="label_room_name">Tên phòng</string>
     <string name="label_rent_price">Giá thuê</string>
-    <string name="label_status">Tình trạng</string>
+    <string name="label_area">Diện tích (m²)</string>
+    <string name="label_status">Đã cho thuê</string>
     <string name="label_tenant_name">Tên người thuê</string>
     <string name="label_phone_number">Số điện thoại</string>
+    <string name="label_notes">Ghi chú</string>
     <string name="status_vacant">Còn trống</string>
     <string name="status_rented">Đã thuê</string>
     <string name="btn_save">Lưu</string>
     <string name="btn_cancel">Hủy</string>
     <string name="error_empty_name">Tên phòng không được để trống</string>
     <string name="error_invalid_price">Giá thuê không hợp lệ</string>
+    <string name="error_invalid_area">Diện tích không hợp lệ</string>
     <string name="update_success">Cập nhật thành công</string>
 </resources>
