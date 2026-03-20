@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">BTNhom</string>
+    <string name="title_room_management">Quan ly nha tro</string>
+    <string name="title_add_room">Them phong tro</string>
+
+    <string name="action_add_room">Them phong</string>
+    <string name="action_save_room">Luu phong</string>
+
+    <string name="label_room_rented">Da cho thue</string>
+    <string name="label_total_rooms">Tong so phong: %1$d</string>
+    <string name="label_total_rooms_placeholder">Tong so phong: 0</string>
+
+    <string name="hint_room_code">Ma phong (VD: P101)</string>
+    <string name="hint_room_name">Ten phong</string>
+    <string name="hint_room_price">Gia thue</string>
+    <string name="hint_tenant_name">Ten nguoi thue</string>
+    <string name="hint_tenant_phone">So dien thoai nguoi thue</string>
+
+    <string name="error_room_code_required">Vui long nhap ma phong</string>
+    <string name="error_room_code_exists">Ma phong da ton tai</string>
+    <string name="error_room_name_required">Vui long nhap ten phong</string>
+    <string name="error_room_price_required">Vui long nhap gia thue</string>
+    <string name="error_room_price_invalid">Gia thue phai la so duong</string>
+    <string name="error_tenant_name_required">Vui long nhap ten nguoi thue</string>
+    <string name="error_tenant_phone_required">Vui long nhap so dien thoai nguoi thue</string>
+
+    <string name="message_add_room_success">Them phong thanh cong</string>
 </resources>
